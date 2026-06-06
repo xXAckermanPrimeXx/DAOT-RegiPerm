@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "regiperm",
+	"version": "1.0.0",
+	"name": "DAOT: RegiPerm",
+	"description": "Regiment permissions, claims, ranks, and server systems.",
+	"authors": [
+		"ZENYSSEVERNOX",
+		"AXON"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ALL RIGHTS RESERVED",
+	"icon": "assets/regiperm/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.zenyssevernox.regiperm.DAOTRegiPerm"
+		],
+		"fabric-datagen": [
+			"com.zenyssevernox.regiperm.DAOTRegiPermDataGenerator"
+		]
+	},
+	"mixins": [
+		"regiperm.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
