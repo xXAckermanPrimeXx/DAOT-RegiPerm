@@ -3,7 +3,7 @@
 	"package": "com.zenyssevernox.regiperm.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-
+		"ExplosionMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
