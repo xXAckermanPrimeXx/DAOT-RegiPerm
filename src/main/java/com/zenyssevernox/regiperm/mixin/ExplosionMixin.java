@@ -28,6 +28,8 @@ public class ExplosionMixin {
     )
     private List<?> regiperm$protectClaimedBlocks(List<?> affectedBlocks) {
 
+        System.out.println("REGIPERM EXPLOSION MIXIN FIRED");
+
         if (!(this.world instanceof ServerWorld serverWorld)) {
             return affectedBlocks;
         }
